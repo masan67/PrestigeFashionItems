@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
                     switch (item.getItemId()){
                         case R.id.nav_profile:
-                            frameLayout.removeView(activeFragment.getView());
                             fm.beginTransaction().remove(activeFragment).add(R.id.fragmentFrameLayout, profileFragment,"1").commit();
                             activeFragment = profileFragment;
                             return true;

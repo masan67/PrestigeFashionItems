@@ -30,6 +30,20 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        view.findViewById(R.id.card_ropa).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "ropa", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        view.findViewById(R.id.card_zapatos).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "zapatos", Toast.LENGTH_LONG).show();
+            }
+        });
+
         return view;
 
 
